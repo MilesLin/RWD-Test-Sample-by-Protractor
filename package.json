@@ -1,0 +1,28 @@
+{
+  "name": "web-e2e",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "protractor": "protractor",
+    "chrome": "protractor protractor.conf.desktop_1024.js && protractor protractor.conf.pad_768.js",
+    "chrome:1024": "protractor protractor.conf.desktop_1024.js",
+    "chrome:768": "protractor protractor.conf.pad_768.js",
+    "wdmupdate": "webdriver-manager update",
+    "updatechrome": "webdriver-manager update --versions.chrome=78.0.3904.105",
+    "postinstall": "webdriver-manager update"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jasmine": "^3.4.0",
+    "@types/jasminewd2": "^2.0.6",
+    "@types/node": "^12.7.4",
+    "blue-harvest": "^0.3.1",
+    "jasmine-spec-reporter": "^4.2.1",
+    "protractor": "^5.4.2",
+    "protractor-screenshot-utils": "^1.0.5",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.6.2"
+  }
+}

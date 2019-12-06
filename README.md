@@ -1,0 +1,1 @@
+This is the simple E2E test template for RWD and CSS test.
