@@ -17,6 +17,7 @@ describe('Quick Start Pages', function() {
     
     for (let index = 0; index < urls.length; index++) {
       const url = urls[index];
+      await browser.get(browser.baseUrl + url);
       await go(browser.baseUrl + url);
       const fileName = url;
       const golden  = './src/' + browser.params.imagePath + `/${browser.params.device}/${fileName}.png`;

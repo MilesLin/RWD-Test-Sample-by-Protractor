@@ -1,5 +1,5 @@
-import { browser, by, element } from 'protractor';
-import { go, removeMask, addMask, compareScreenshot } from 'blue-harvest'
+import { browser } from 'protractor';
+import { go, compareScreenshot } from 'blue-harvest'
 import { ProtractorScreenShotUtils } from 'protractor-screenshot-utils'
 
 describe('Protractor Setup Pages', function() {

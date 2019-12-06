@@ -2,15 +2,15 @@
 // https://github.com/angular/protractor/blob/master/lib/config.ts
 
 const { SpecReporter } = require('jasmine-spec-reporter');
-process.env['UPDATE_GOLDENS'] = "false";
+process.env['UPDATE_GOLDENS'] = "1";
 
 exports.config = {
   params: { 
-    width: 1024,
+    width: 1440,
     height: 568,
     imagePath: 'goldens/chrome',
-    device: 'desktop_320'
-  } ,
+    device: 'desktop_1440'
+  },
   allScriptsTimeout: 999000,
   specs: [
     './src/**/*.e2e-spec.ts'
